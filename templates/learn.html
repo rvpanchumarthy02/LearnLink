@@ -8,9 +8,9 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="learn.html" class="active">Learn</a>
-        <a href="about.html">About</a>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('learn') }}" class="active">Learn</a>
+        <a href="{{ url_for('about') }}">About</a>
     </nav>
 
     <main>
@@ -21,9 +21,10 @@
             <li><b>CSS</b> → The style 🎨</li>
             <li><b>JavaScript</b> → The logic ⚙️</li>
         </ul>
-        <a class="btn" href="about.html">Next: About</a>
+        <a class="btn" href="{{ url_for('about') }}">Next: About</a>
     </main>
 
     <footer>Keep learning 🚀</footer>
 </body>
 </html>
+
