@@ -8,17 +8,19 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="learn.html">Learn</a>
-        <a href="about.html">About</a>
+        <a href="{{ url_for('home') }}" class="active">Home</a>
+        <a href="{{ url_for('learn') }}">Learn</a>
+        <a href="{{ url_for('about') }}">About</a>
     </nav>
 
     <main>
         <h1>Welcome to Your Mini Learning Site 🌱</h1>
         <p>This simple website helps you learn HTML & CSS — and how to link between pages!</p>
-        <a class="btn" href="learn.html">Start Learning</a>
+        <a class="btn" href="{{ url_for('learn') }}">Start Learning</a>
     </main>
 
     <footer>Made with 💡 by You</footer>
 </body>
 </html>
+
+
